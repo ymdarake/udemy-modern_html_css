@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+    <title>Keyframes</title>
+    <style>
+      body {
+        background: #333;
+      }
+
+      .box {
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* animation-name: animate1;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out; */
+        animation: animate1 5s forwards 1s ease-in-out;
+      }
+
+      @keyframes animate1 {
+        from {
+          top: 0px;
+        }
+        to {
+          top: 300px;
+          width: 600px;
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
