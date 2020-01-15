@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex Basics</title>
+    <style>
+      #container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+        height: 300px;
+        align-items: baseline; /* must be height */
+        align-content: space-around; /* if flex-wrap: wrap, and items wrapped */
+
+        background-color: #555;
+      }
+      .item-1 {
+        order: 3;
+      }
+      .item-2 {
+        /* Align single item vertical */
+        align-self: flex-end;
+      }
+      .item {
+        background: #f4f4f4;
+        border: rgb(31, 21, 21) solid 1px;
+        padding: 1rem;
+        text-align: center;
+        margin: 0.5rem;
+        flex-basis: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="item item-1">
+        <h3>Item 1</h3>
+      </div>
+      <div class="item item-2">
+        <h3>Item 2</h3>
+      </div>
+      <div class="item item-3">
+        <h3>Item 3</h3>
+      </div>
+    </div>
+  </body>
+</html>
